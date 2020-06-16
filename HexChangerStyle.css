@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Cambria;
+	
+}
+
+
+#heading{
+	text-align:center;
+	color:#7C728D;
+	padding-top: 30px;
+	font-weight: bold;
+	font-size:46px;
+	letter-spacing: 2px;
+}
+
+
+#ColorBox{
+	width:500px;
+	height:300px;
+	border:3px solid red;
+	background-color: black;
+	margin:5% auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+
+#button{
+	width:200px;
+	height:30px;
+    border:1px solid red;
+	font-size: 1em;
+	font-weight: bold;
+	margin:10px;
+
+}
+#button:active {
+	transform: translate(2px, 3px);
+}
+
+
+
+
+.ColorCodeText{
+	color:white;
+	border:1px solid red;
+	padding:5px;
+	font-size: 1em;
+	font-weight: small;
+	letter-spacing: 2px;
+	background-color: black;
+}
+
+
+/*----------------OKAY BYE----Made by Ramim -------------
