@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Cambria;
+}
+
+#calculator{
+	width:406px;
+	height:465px;
+	background-color: #1D0008;
+	margin:5% auto;
+	border-radius: 20px;
+	overflow: hidden;
+}
+#screen{
+	border-bottom: 3px solid #3CF804;
+	background-color: black;
+	color:white;
+	text-align: right;
+	width:390px;
+	height:80px;
+
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#screenText{
+	margin-top: 5px;
+	margin-right: 10px;
+	transform:  translateX(0px);
+	color:black;
+}
+.buttonContainer{
+	width:390px;
+
+}
+.btn{
+	margin-left: 34px;
+
+}
+
+input{
+	font-weight: bold;
+	font-size: 1.8em;
+	width:100px;
+	height:50px;
+	margin : 5px;
+	border-radius: 50px;
+	background-color: #19C5AA;
+}
+.live{
+	background-color: #41E53C;
+	animation-name: grad;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes grad{
+	0%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+};
+
+input:hover {
+
+	background-color: yellow;
+}
+
+.red:hover{
+	background-color: #FF5141;
+}
+
+input:active{
+	background-color: #0DE04A;
+}
+
+
+
+.welcome:before{
+	
+	content: "welcome";
+	color:#3CF804;
+	opacity: 0;
+	display: inline-block;
+	animation-name: wel;
+	animation-duration: 1s;
+	animation-delay:0s;
+	animation-timing-function: ease-in;
+	margin-top: 5px;
+	margin-right: 10px;
+	
+	z-index: 1;
+}
+
+@keyframes wel{
+	from{
+		opacity: 0;
+		transform: translateX(-110px) scaleX(0);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateX(-110px) scaleX(1.5);
+	}
+}
