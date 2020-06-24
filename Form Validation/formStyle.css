@@ -1,0 +1,69 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	
+}
+body{
+	background-color: #203A46;
+	font-size: 22px;
+	color: white;
+}
+
+#formContainer{
+	width:350px;
+	height:400px;
+	margin:10% auto;
+	background-color: #0B2936;
+}
+#form{
+	position: absolute;
+	background-color:#0B2936;
+}
+
+#nameLogs,#passLogs{
+	border: 1px solid #0B2936;
+	overflow: hidden;
+	font-size: 14px;
+	margin-top: 4px;
+	margin-left: 20px;
+	padding: 0px 4px;
+	color:black;
+	background-color: lightgray;
+	width:307px;
+	height: 0;
+	transition-property: height;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+
+#userName:focus + #nameLogs{
+	height: 58px;
+	}
+#userPass:focus + #passLogs{
+	height:85px;
+}
+
+
+
+
+
+
+
+
+
+
+#userNameField,#userPassField,#submitBtn{
+	margin:15px auto;
+	margin-left: 10px;
+
+}
+input{
+	margin-top: 0px;
+	color: black;
+}
+
+ul{
+	list-style-position: inside;
+}

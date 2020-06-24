@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="formStyle.css">
+	<title>Registration Form</title>
+</head>
+<body>
+		<div id="formContainer">
+			
+			<form action="HexChanger.html" id="form" onsubmit="return validation()">
+			<div id="userNameField">
+				<label class="labels">Username : </label>
+				<input type="text" id="userName"  autocomplete="off" placeholder="Username">
+				
+
+				<div id="nameLogs">
+					 <ul>
+					 	<li id="canContain">Username can only contain A-Z, a-z , 0-9 , - </li>
+					 	<li id="firstLetter">Username must be started with letters</li>
+					 	<li id="nameCount">Username must be between 5 and 20 charecters </li>
+					 </ul>
+					</div>
+
+
+			</div>	
+
+			<div id="userPassField">
+				<label class="labels">Password : </label>
+				<input type="password" id="userPass"  autocomplete="off" placeholder="*******">
+
+
+				<div id="passLogs">
+					 <ul>
+					 	<li id="passCount">Password must be between 5 and 20 charecters</li>
+					 	<li id="mustLetters">Password must contain at least one uppercase & one lowercase letter</li>
+					 	<li id="specialNumber">Password must contain at least one number and a special charecter, such as: #,$,%,!,? </li>
+					 </ul>
+					</div>
+
+
+
+			</div>
+
+
+			<div id="submitBtn"><input type="submit" value="submit" disabled="disabled"></div>
+						
+
+
+
+
+
+			</form>			
+
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+<script src="formApp.js"></script>
+</body>
+</html>
