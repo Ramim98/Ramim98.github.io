@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+}
+
+#clockBody{
+	background-color: #11AA8C;
+	width: 300px;
+	height: 300px;
+	margin:10% auto;
+	border:5px solid #A9B776 ;
+	border-radius: 300px;
+
+}
+.Hand{
+	width:140px;
+	height:5px;
+	background-color: black;
+	position: absolute;
+	top:150px;
+	transform:rotate(90deg);
+	transform-origin: 100%;
+	transition: all 0.05s linear;
+	transition-delay: 0s;
+}
+#hands{
+	position: relative;
+}
+/*---------------extras---------*/
+
+#pin{
+	width:30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: black;
+	position: absolute;
+	top:136px;
+	left:124px;
+	
+}
+.hd{
+	color:#9BED13;
+	position: absolute;
+}
+#h12{
+	left:125px;
+}
+#h6{
+	top:254px;
+	left:134px;
+}
+#h3{
+	top:131px;
+	left:270px;
+}
+#h9{
+	top:131px;
+	left:6px;
+}
