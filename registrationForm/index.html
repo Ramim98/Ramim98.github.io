@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="formStyle.css">
+	<title>Registration Form</title>
+</head>
+<body>
+		<div id="formContainer">
+			
+			<form id="form" action="thanks.html" method="post" onsubmit="return checked()">
+			<div id="userNameField">
+				<label class="labels">Username : </label><br>
+				<input type="text" id="userName"  autocomplete="off" placeholder="Username">
+				
+
+				<div id="nameLogs">
+					 <ul>
+					 	<li id="canContain" >Username can only contain A-Z, a-z , 0-9 , - </li>
+					 	<li id="firstLetter">Username must be started with letters</li>
+					 	<li id="nameCount">Username must be between 5 and 20 charecters </li>
+					 </ul>
+					</div>
+
+
+			</div>	
+
+			<div id="userPassField">
+				<label class="labels">Password : </label><br>
+				<input type="password" id="userPass"  autocomplete="off" placeholder="*******">
+
+
+				<div id="passLogs">
+					 <ul>
+					 	<li id="passCount">Password must be between 8 and 32 charecters long.</li>
+					 	<li id="mustLetters">Password must contain at least one uppercase & one lowercase letter.</li>
+					 	<li id="specialNumber">Password must contain at least one number and a special charecter, such as: #,$,%,!,? </li>
+					 </ul>
+					</div>
+
+
+
+			</div>
+
+
+
+			<div id="ConfirmPassField">
+				<label class="labels">Confirm Password : </label><br>
+				<input type="password" id="ConfirmPass"  autocomplete="off" placeholder="*******">
+
+
+				<div id="ConfirmPassLogs">
+					 <ul>
+					 	<li id="passCheck">Password must be the same as before.</li>
+					 </ul>
+					</div>
+			</div>
+
+
+			<div id="emailField">
+				<label class="labels">Email : </label><br>
+				<input type="text" id="email"  autocomplete="off">
+
+
+				<div id="emailLogs">
+					 <ul>
+					 	<li id="emailCheck">Must be a valid email address.</li>
+					 </ul>
+					</div>
+			</div>
+
+
+
+
+			<div id="submitBtn"><input id="subBtn" type="submit" value="submit" ></div>
+			
+						
+
+
+
+
+
+			</form>			
+
+
+
+
+
+
+
+
+
+		</div>
+
+
+
+<script src="formApp.js"></script>
+</body>
+</html>
