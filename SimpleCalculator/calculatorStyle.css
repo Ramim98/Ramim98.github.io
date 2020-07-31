@@ -37,6 +37,7 @@
 }
 .btn{
 	margin-left: 34px;
+	outline: none;
 
 }
 
@@ -48,6 +49,7 @@ input{
 	margin : 5px;
 	border-radius: 50px;
 	background-color: #19C5AA;
+  	outline: none;
 }
 .live{
 	background-color: #41E53C;
@@ -55,6 +57,7 @@ input{
 	animation-duration: .5s;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
+	outline: none;
 }
 
 @keyframes grad{
@@ -69,14 +72,17 @@ input{
 input:hover {
 
 	background-color: yellow;
+	outline: none;
 }
 
 .red:hover{
 	background-color: #FF5141;
+	outline: none;
 }
 
 input:active{
 	background-color: #0DE04A;
+	outline: none;
 }
 
 
